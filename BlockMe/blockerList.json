@@ -1,0 +1,30 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "webkit.org/images/icon-gold.png"
+        }
+    },
+    {
+        "action" : {
+            "selector" : "a[href*='www.dailymail']",
+            "type" : "css-display-none"
+        },
+        "trigger" : {
+        "url-filter" : ".*"
+        }
+    },
+    {
+        "action" : {
+            "type" : "block"
+        },
+        "trigger" : {
+            "url-filter" : ".*",
+            "resource-type" : ["script"],
+            "load-type" : ["third-party"]
+        }
+    }
+]
+
